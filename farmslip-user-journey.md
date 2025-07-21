@@ -6,17 +6,22 @@
 flowchart TD
     A[Awareness] --> B[Website Landing]
     B --> C["Snap a slip → see it sorted in 5s" CTA]
-    C --> D[Slip-Scan Demo]
-    D --> E[Sign-Up Modal]
-    E --> F[Persona Picker]
+    C --> D1[Option A: Download App]
+    C --> D2[Option B: Web App Sign-Up]
+    D1 --> E1[App Store / Google Play]
+    D2 --> E2[Website Form]
+    E1 --> F1[Sign-Up Screen]
+    E2 --> F2[Account Created]
+    F1 --> G[Persona Picker]
+    F2 --> G[Persona Picker]
     
-    F --> G1[A: Farm Admin Hero]
-    F --> G2[B: Field Service Agent]
-    F --> G3[C: Smallholder Farmer]
-    F --> G4[D: Commercial Finance Team]
-    F --> G5[E: Rural SME Owner]
-    F --> G6[F: Consultant/Accountant]
-    F --> G7[G: Fuel-Claim Employee]
+    G --> G1[A: Farm Admin Hero]
+    G --> G2[B: Field Service Agent]
+    G --> G3[C: Smallholder Farmer]
+    G --> G4[D: Commercial Finance Team]
+    G --> G5[E: Rural SME Owner]
+    G --> G6[F: Consultant/Accountant]
+    G --> G7[G: Fuel-Claim Employee]
     
     %% Farm Admin Hero Journey
     G1 --> H1[Onboarding: Farm setup & 1st slip scan]
@@ -86,6 +91,7 @@ flowchart TD
 ```markdown
 | Stage | Farm Admin Hero | Field Service Agent | Smallholder Farmer | Commercial Finance Team | Rural SME Owner | Consultant/Accountant | Fuel-Claim Employee |
 |-------|----------------|--------------------|--------------------|------------------------|-----------------|----------------------|-------------------|
+| **Download App / Web Sign-Up** | App download completion rate | App store conversion rate | Web form completion rate | Team admin account setup | Business owner signup rate | Professional account creation | Employee onboarding success |
 | **Onboarding (Day 0)** | 1st slip scanned with farm context | 1st slip scanned with location data | 1st expense slip categorized | 1st batch of slips processed | 1st business expense recorded | 1st client slip reviewed | 1st fuel receipt claimed |
 | **Activation (Week 1)** | ≥5 slips + daily 18:00 farm summary push | ≥5 slips + route optimization enabled | ≥5 slips + expense categories setup | ≥5 team members active + bulk processing used | ≥5 different expense categories used | ≥5 clients onboarded + batch review workflow | ≥5 fuel claims + auto-categorization active |
 | **Value Reveal** | Farm analytics dashboard engagement | Route efficiency improvements shown | Profit margin insights accessed | Compliance score improvements | Cash flow predictions viewed | Client comparison analytics used | Mileage savings calculations shown |
